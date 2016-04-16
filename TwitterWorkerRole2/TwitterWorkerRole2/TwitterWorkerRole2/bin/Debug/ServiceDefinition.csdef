@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  **********************************************************************************************
+
+  Este archivo se generó con una herramienta del archivo de proyecto: ServiceDefinition.csdef
+
+  Los cambios realizados en este archivo puede provocar un comportamiento incorrecto y se perderán si el archivo se vuelve a generar.
+
+  **********************************************************************************************
+-->
+<ServiceDefinition name="TwitterWorkerRole2" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WorkerRole name="MyTwitterWorlerRole" vmsize="Small">
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\rcf\Debug\MyTwitterWorlerRoleContent\" />
+      </Content>
+      <Content destination=".\">
+        <SourceDirectory path="D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\ecf\MyTwitterWorlerRoleContent\" />
+      </Content>
+    </Contents>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+  </WorkerRole>
+</ServiceDefinition>

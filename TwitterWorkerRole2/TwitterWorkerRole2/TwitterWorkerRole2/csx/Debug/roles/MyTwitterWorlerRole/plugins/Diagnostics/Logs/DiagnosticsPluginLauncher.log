@@ -1,0 +1,14 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Emulator config file set to D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\csx\Debug\roles\MyTwitterWorlerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] DiagnosticsStoreRootPath set to: C:\Users\Víctor\AppData\Local\dftmp\Resources\2ce9deb8-271b-4d79-98a4-0ad51fb50fe4
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Loading config file: D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\csx\Debug\roles\MyTwitterWorlerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Emulator config file set to D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\csx\Debug\roles\MyTwitterWorlerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:07 p. m.] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:08 p. m.] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:08 p. m.] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:08 p. m.] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:08 p. m.] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [15/04/2016 11:24:08 p. m.] Resetting DiagnosticPlugin

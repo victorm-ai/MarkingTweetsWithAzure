@@ -1,0 +1,57 @@
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v4
+DiagnosticsPlugin.exe Error: 0 : [15/04/2016 11:24:09 p. m.] Failed to save IIS Directory state
+DiagnosticsPlugin.exe Error: 0 : [15/04/2016 11:24:09 p. m.] System.Runtime.InteropServices.COMException (0x80040154): No se pudo recuperar el generador de clases COM para el componente con CLSID {2B72133B-3F5B-4602-8952-803546CE3344} debido al siguiente error: 80040154 Clase no registrada (Excepción de HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG)).
+   en System.Runtime.Remoting.RemotingServices.AllocateUninitializedObject(RuntimeType objectType)
+   en System.Runtime.Remoting.Activation.ActivationServices.CreateInstance(RuntimeType serverType)
+   en System.Runtime.Remoting.Activation.ActivationServices.IsCurrentContextOK(RuntimeType serverType, Object[] props, Boolean bNewObj)
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   en System.Activator.CreateInstance[T]()
+   en Microsoft.Web.Administration.ConfigurationManager.CreateAdminManager[TClass,TInterface](WebConfigurationMap webConfigMap, Boolean isAdminConfig)
+   en Microsoft.Web.Administration.ConfigurationManager.CreateConfiguration(WebConfigurationMap configMap, String configPathToEdit, Boolean isAdminConfig)
+   en Microsoft.Web.Administration.ConfigurationManager.GetConfiguration(String rawConfigurationPath, String cacheKey, Boolean isAdminConfig)
+   en Microsoft.Web.Administration.ServerManager.get_SitesSection()
+   en Microsoft.Web.Administration.ServerManager.get_Sites()
+   en Microsoft.Azure.Plugins.Plugin.DiagnosticsPluginManager.SaveIISDirectoryState()
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Emulator config file set to D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\csx\Debug\roles\MyTwitterWorlerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] DiagnosticsStoreRootPath set to: C:\Users\Víctor\AppData\Local\dftmp\Resources\2ce9deb8-271b-4d79-98a4-0ad51fb50fe4
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Loading config file: D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\csx\Debug\roles\MyTwitterWorlerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Emulator config file set to D:\Dropbox\My Hard Disk\MVP\Contribuciones\Material\Compute\TwitterWorkerRole2\TwitterWorkerRole2\TwitterWorkerRole2\csx\Debug\roles\MyTwitterWorlerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*" />
+      </WindowsEventLog>
+      <CrashDumps containerName="wad-crashdumps" dumpType="Mini">
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+    </DiagnosticMonitorConfiguration>
+  </WadCfg>
+  <StorageAccount>mytwitterstorage</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [15/04/2016 11:24:09 p. m.] Private setting is loaded
