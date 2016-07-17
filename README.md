@@ -5,8 +5,6 @@ This code will help you to implement a worker role in Microsoft Azure to mark Tw
 
 With this project you can to attract more followers and increment your audience resulting by tweets like favorites.
 
-TweetSharp
-
 # Technology used
 * Visual Studio 2013.
 * .NET (language C#).
