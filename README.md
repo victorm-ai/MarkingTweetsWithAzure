@@ -1,5 +1,5 @@
 # Overview - Marking tweets with Azure
-This code will help you to implement a worker role in Microsoft Azure to mark Tweets on your twitter account like favorites.
+This code will help you to implement a worker role in Microsoft Azure to mark tweets on your twitter account like favorites.
 
 # About the project
 
