@@ -14,8 +14,8 @@ With this project you can to attract more followers and increment your audience 
 # Requirements
 
 * Visual Studio 2013.
-* Windows 7/8/10
-* One twitter account.
+* Windows 7/8/10.
+* * One twitter account.
 
 # Comments
 
